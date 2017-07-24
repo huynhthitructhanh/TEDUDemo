@@ -50,6 +50,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TEDU.Common\TEDU.Common.csproj">
+      <Project>{efe347cf-0076-49ce-9037-a475cc3c54e1}</Project>
+      <Name>TEDU.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TEDU.Data\TEDU.Data.csproj">
+      <Project>{88a2dbbd-16b2-47f8-9c63-a10ff6e55bdd}</Project>
+      <Name>TEDU.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TEDU.Model\TEDU.Model.csproj">
+      <Project>{18b7180e-9659-421a-bb73-e0d6625724f1}</Project>
+      <Name>TEDU.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
