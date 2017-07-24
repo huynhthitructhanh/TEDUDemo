@@ -15,7 +15,7 @@ namespace TEDU.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "thanks.";
 
             return View();
         }
