@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TEDU.Model.Model
@@ -11,5 +13,7 @@ namespace TEDU.Model.Model
 
         [Required]
         public string Name { set; get; }
+
+        public virtual IEnumerable<Menu> Menus { set; get; }
     }
 }
