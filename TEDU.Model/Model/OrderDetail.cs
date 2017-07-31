@@ -19,5 +19,8 @@ namespace TEDU.Model.Model
 
         [ForeignKey("OrderID")]
         public virtual Order Orders { set; get; }
+
+        [ForeignKey("ProductID")]
+        public virtual Product Products { set; get; }
     }
 }

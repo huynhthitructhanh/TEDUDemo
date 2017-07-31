@@ -24,6 +24,6 @@ namespace TEDU.Model.Model
         public virtual Post Post { set; get; }
 
         [ForeignKey("TagID")]
-        public virtual PostTag Tag { set; get; }
+        public virtual Tag Tag { set; get; }
     }
 }

@@ -17,5 +17,7 @@ namespace TEDU.Model.Model
 
         [ForeignKey("ProductID")]
         public virtual Product Products { set; get; }
+
+        public virtual Tag Tags { set; get; }
     }
 }

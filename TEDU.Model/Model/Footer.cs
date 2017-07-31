@@ -8,7 +8,7 @@ namespace TEDU.Model.Model
     {
         [Key]
         [MaxLength(50)]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [Required]
         public string Content { set; get; }
