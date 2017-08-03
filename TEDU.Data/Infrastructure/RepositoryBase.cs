@@ -33,9 +33,9 @@ namespace TEDU.Data.Infrastructure
         }
 
         #region Implementation
-        public virtual void Add(T entity)
+        public virtual T Add(T entity)
         {
-            dbSet.Add(entity);
+            return dbSet.Add(entity);
         }
 
         public virtual void Update(T entity)
@@ -44,9 +44,16 @@ namespace TEDU.Data.Infrastructure
             dataContext.Entry(entity).State = EntityState.Modified;
         }
 
-        public virtual void Delete(T entity)
+        public virtual T Delete(T entity)
         {
-            dbSet.Remove(entity);
+           return dbSet.Remove(entity);
+        }
+
+        public virtual T Delete(int id)
+        {
+
+            var entity = dbSet.Find(id);
+           return dbSet.Remove(entity);
         }
 
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
